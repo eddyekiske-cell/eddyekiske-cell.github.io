@@ -193,7 +193,46 @@ escrevo para alumiar lugares assombrados e inóspitos.
         </div>
 
     </div>
+<style>
 
+.mural-cards {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.card-poetico {
+    text-align: center;
+}
+
+.card-poetico img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+
+    .mural-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .card-poetico img {
+        max-width: 100%;
+    }
+
+}
+
+</style>
 </section>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
