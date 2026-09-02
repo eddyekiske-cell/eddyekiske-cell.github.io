@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <title>Eddye Kiske | Poeta, Escritor e Letrista Brasileiro</title>
-</head>
+<title>Eddye Kiske | Poeta, Escritor e Letrista Brasileiro</title>
+
+<meta name="description" content="Eddye Kiske é poeta, escritor e letrista brasileiro. Conheça seus livros, poemas, contos, textos e trabalhos autorais.">
 
 <meta name="description" content="Compre o livro Textos Indomáveis de Eddye Kiske. Poesia contemporânea com crítica social, identidade e reflexão. Edição limitada — garanta o seu agora.">
 <style>
@@ -125,30 +125,71 @@ footer {
     margin: 40px auto;
     padding: 0 20px;
 }
+/* ================================
+   CARDS POÉTICOS
+   ================================ */
 
+.cards-poeticos {
+    max-width: 1000px;
+    margin: 55px auto 70px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Título da seção */
+.cards-poeticos h2 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+/* Subtítulo */
+.cards-poeticos > p {
+    margin: 0 0 38px;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Grade dos cards */
 .cards-poeticos .card-poetico {
     width: 45%;
     max-width: 450px;
-    margin: 30px auto;
+    margin: 0 1.5% 35px;
     display: inline-block;
     vertical-align: top;
 }
 
+/* Imagens */
 .cards-poeticos .card-poetico img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* CELULAR */
+/* ================================
+   CELULAR
+   ================================ */
+
 @media (max-width: 768px) {
+
+    .cards-poeticos {
+        padding: 0 15px;
+        margin-top: 45px;
+    }
+
+    .cards-poeticos > p {
+        font-size: 1.15rem;
+        margin-bottom: 30px;
+    }
+
     .cards-poeticos .card-poetico {
         width: 90%;
         max-width: 450px;
         display: block;
-        margin: 30px auto;
+        margin: 0 auto 30px;
     }
 }
+
 </style>
 </head>
 
