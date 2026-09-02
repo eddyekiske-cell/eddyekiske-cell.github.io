@@ -238,26 +238,70 @@ escrevo para alumiar lugares assombrados e inóspitos.
     text-align: center;
 }
 
-.card-poetico img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* ================================
+   CARDS POÉTICOS
+   ================================ */
+
+.cards-poeticos {
+    max-width: 1000px;
+    margin: 55px auto 70px;
+    padding: 0 20px;
+    text-align: center;
 }
 
-/* CELULAR */
-@media (max-width: 700px) {
+/* Título da seção */
+.cards-poeticos h2 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
 
-    .mural-cards {
-        grid-template-columns: 1fr;
-        gap: 30px;
+/* Subtítulo */
+.cards-poeticos > p {
+    margin: 0 0 38px;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Grade dos cards */
+.cards-poeticos .card-poetico {
+    width: 45%;
+    max-width: 450px;
+    margin: 0 1.5% 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Imagens */
+.cards-poeticos .card-poetico img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================================
+   CELULAR
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .cards-poeticos {
         padding: 0 15px;
+        margin-top: 45px;
     }
 
-    .card-poetico img {
-        max-width: 100%;
+    .cards-poeticos > p {
+        font-size: 1.15rem;
+        margin-bottom: 30px;
     }
+
+    .cards-poeticos .card-poetico {
+        width: 90%;
+        max-width: 450px;
+        display: block;
+        margin: 0 auto 30px;
+    }
+}
 
 }
 
